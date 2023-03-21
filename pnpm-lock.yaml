@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@ivanv/vue-collapse-transition': ^1.0.2
   '@types/node': ^18.15.5
   '@vitejs/plugin-vue': ^4.1.0
   rollup-plugin-typescript2: ^0.34.1
@@ -11,15 +12,16 @@ specifiers:
   vue-tsc: ^1.2.0
 
 dependencies:
+  '@ivanv/vue-collapse-transition': 1.0.2
   '@types/node': 18.15.5
   vue: 3.2.47
 
 devDependencies:
   '@vitejs/plugin-vue': 4.1.0_vite@4.2.1+vue@3.2.47
-  rollup-plugin-typescript2: 0.34.1_typescript@4.9.5
+  rollup-plugin-typescript2: 0.34.1_pn5zetjg24cqcolt42iry5qj6a
   typescript: 4.9.5
   vite: 4.2.1_@types+node@18.15.5
-  vite-plugin-dts: 2.1.0_h6rrpcx33yr4dcgxzju5ogtziu
+  vite-plugin-dts: 2.1.0_yzmwwbg3utas2xou2pzvrcm25i
   vue-tsc: 1.2.0_typescript@4.9.5
 
 packages:
@@ -245,6 +247,10 @@ packages:
     dev: true
     optional: true
 
+  /@ivanv/vue-collapse-transition/1.0.2:
+    resolution: {integrity: sha512-eWEameFXJM/1khcoKbITvKjYYXDP1WKQ/Xf9ItJVPoEjCiOdocR3AgDAERzDrNNg4oWK28gRGi+0ft8Te27zxw==}
+    dev: false
+
   /@jridgewell/sourcemap-codec/1.4.14:
     resolution: {integrity: sha512-XPSJHWmi394fuUuzDnGz1wiKqWfo1yXecHQMRf2l6hztTO+nPru658AyDngaBe7isIxEkRsPR3FZh+s7iVa4Uw==}
     dev: true
@@ -321,7 +327,7 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /@rollup/pluginutils/5.0.2:
+  /@rollup/pluginutils/5.0.2_rollup@3.20.0:
     resolution: {integrity: sha512-pTd9rIsP92h+B6wWwFbW8RkZv4hiR/xKsqre4SIuAOaOEQRxi0lqLke9k2/7WegC85GgUs9pjmOjCUi3In4vwA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
@@ -333,6 +339,7 @@ packages:
       '@types/estree': 1.0.0
       estree-walker: 2.0.2
       picomatch: 2.3.1
+      rollup: 3.20.0
     dev: true
 
   /@rushstack/node-core-library/3.55.2_@types+node@18.15.5:
@@ -948,7 +955,7 @@ packages:
     engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
     dev: true
 
-  /rollup-plugin-typescript2/0.34.1_typescript@4.9.5:
+  /rollup-plugin-typescript2/0.34.1_pn5zetjg24cqcolt42iry5qj6a:
     resolution: {integrity: sha512-P4cHLtGikESmqi1CA+tdMDUv8WbQV48mzPYt77TSTOPJpERyZ9TXdDgjSDix8Fkqce6soYz3+fa4lrC93IEkcw==}
     peerDependencies:
       rollup: '>=1.26.3'
@@ -957,6 +964,7 @@ packages:
       '@rollup/pluginutils': 4.2.1
       find-cache-dir: 3.3.2
       fs-extra: 10.1.0
+      rollup: 3.20.0
       semver: 7.3.8
       tslib: 2.5.0
       typescript: 4.9.5
@@ -1075,7 +1083,7 @@ packages:
     engines: {node: '>= 0.10'}
     dev: true
 
-  /vite-plugin-dts/2.1.0_h6rrpcx33yr4dcgxzju5ogtziu:
+  /vite-plugin-dts/2.1.0_yzmwwbg3utas2xou2pzvrcm25i:
     resolution: {integrity: sha512-Vw0FdCuM3VLR4hTFHh0yMEzfwI7NyFvPIMFwvE+Q0t4qtoHIfYOP/JXs7nTnHuQk87FSjlhGeIJ1fLBcktgPgA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -1083,7 +1091,7 @@ packages:
     dependencies:
       '@babel/parser': 7.21.3
       '@microsoft/api-extractor': 7.34.4_@types+node@18.15.5
-      '@rollup/pluginutils': 5.0.2
+      '@rollup/pluginutils': 5.0.2_rollup@3.20.0
       '@rushstack/node-core-library': 3.55.2_@types+node@18.15.5
       debug: 4.3.4
       fast-glob: 3.2.12
