@@ -14,22 +14,22 @@
             <Transition name="accordion-fade-slide" mode="out-in">
                 <div v-if="showAccordion" class="accordion">
                     <div
-                    class="accordion__item"
-                    v-for="(item, i) in categoryItems"
-                    :key="`accordion-item-${i}`"
+                      class="accordion__item"
+                      v-for="(item, i) in categoryItems"
+                      :key="`accordion-item-${i}`"
                     >
                     <div :class="generateQuestionClasses(i)" @click="makeActive(i)">
                         <p class="accordion__title-text" v-html="item[questionProperty]"></p>
                         <button :class="generateButtonClasses(i)"></button>
                     </div>
                         <collapse-transition>
-                        <div v-if="i === activeQuestionIndex">
-                            <div class="accordion__value">
-                                <slot v-bind="item">
-                                <div v-html="item[answerProperty]"></div>
-                                </slot>
-                            </div>
-                        </div>
+                          <div v-if="i === activeQuestionIndex">
+                              <div class="accordion__value">
+                                  <slot v-bind="item">
+                                  <div v-html="item[answerProperty]"></div>
+                                  </slot>
+                              </div>
+                          </div>
                         </collapse-transition>
                     </div>
                 </div>
@@ -119,8 +119,8 @@ const categories = computed(() => {
 });
 
 const categoryItems = computed(() => {
-    return props.items
-    .filter(item => item[props.tabName] === activeTab.value)
+  return props.items
+  .filter(item => item[props.tabName] === activeTab.value)
 });
 
 const hasNavigation = computed(() => {
@@ -171,10 +171,10 @@ const generateCategoryClasses = (category: string) => {
 };
 
 onMounted(() => {
-    rootEl.value?.style.setProperty('--active-color', props.activeColor);
-    rootEl.value?.style.setProperty('--border-color', props.borderColor);
-    rootEl.value?.style.setProperty('--font-color', props.fontColor);
-})
+  rootEl.value?.style.setProperty('--active-color', props.activeColor);
+  rootEl.value?.style.setProperty('--border-color', props.borderColor);
+  rootEl.value?.style.setProperty('--font-color', props.fontColor);
+});
 
 </script>
 
